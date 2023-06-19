@@ -1,0 +1,127 @@
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+/*---End Bases---*/
+
+/*---Navbar---*/
+.navbar {
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2b506d;
+}
+.navbar .logo {
+  font-size: 2em;
+  font-weight: bold;
+}
+/* .logo_img {
+  width: 119px;
+  height: 84px;
+} */
+.navbar .nav-links ul {
+  display: flex;
+  align-items: center;
+}
+.navbar .nav-links ul li {
+  margin: 0 25px;
+  font-size: 20px;
+}
+.navbar .nav-links ul li.active a {
+  color: #eee;
+  font-weight: 800;
+}
+.navbar a {
+  color: white;
+}
+.navbar .menu-hamburger {
+  display: none;
+  color: white;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  font-size: 35px;
+  cursor: pointer;
+}
+.navbar .icon-bars {
+  display: none;
+}
+
+#logout {
+  padding: 10px;
+  background-color: #E74C3C;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 19px;
+  cursor: pointer;
+}
+/* line */
+.navbar .nav-menu > li >a.active::after, /* grouping */
+.navbar .nav-menu > li >a:not(.user,.log)::after {
+  content: "";
+  display: block;
+  height: 3px;
+  background-color: #b5cdfb;
+  transition: 0.5s;
+}
+.navbar .nav-menu > li > a.active::after {
+  width: 100%;
+}
+.navbar .nav-menu > li > a::after {
+  width: 0;
+}
+.navbar .nav-menu > li > a:hover::after {
+  width: 100%;
+}
+
+/* NavBar Respon */
+@media screen and (max-width: 600px) {
+  .navbar .nav-links .nav-menu {
+    display: none;
+  }
+  .navbar .icon-bars{
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive {
+    position: relative;
+    background-color: #223762;
+    display: block;
+  }
+  .navbar.responsive .nav-links .nav-menu {
+    display: block;
+  }
+  .navbar.responsive .logo {
+    margin-left: 27%;
+  }
+  .navbar.responsive .icon-bars{
+    position: absolute;
+    right: 42px;
+    top: 7px;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    margin: 20px 27%;
+    text-align: center;
+  }
+  /* .navbar.responsive  .user-login{
+    margin-left: 40%;
+  } */
+}
+

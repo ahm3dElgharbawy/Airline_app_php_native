@@ -1,0 +1,125 @@
+/* scroll */
+html {
+    scroll-behavior: smooth;
+}
+  /* width */
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #1e639b; 
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #285070; 
+}
+/* End scroll */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    margin-bottom: 0;
+}
+.contact{
+	display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.contact .content {
+    margin-top: 75px;
+    position: relative;
+    width: 303px;
+}
+.info{
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    font-size: 20px;
+}
+.title{
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.title-active{
+    color: #0977ff;
+}
+.icon{
+    margin-right: 10px;
+    align-self: center;
+}
+.details{
+    font-size: 20px;
+    margin: -4px 41px;
+}
+.form{
+    margin: 68px 0;
+    width: 415px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px #c6c6c6;
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.form form h1{
+	text-align: center;
+	font-size: 45px;
+}
+.form form input{
+    width: 330px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid gainsboro;
+    background: none;
+    padding: 6px;
+    color: black;
+    margin-top: 25px;
+
+}
+.form form textarea{
+    width: 330px;
+    height: 100px;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid gainsboro;
+    background: none;
+    padding: 5px;
+    color: black;
+    margin-top: 20px;
+    resize: none;
+}
+.form form input[type="submit"]{
+    width: 342px;
+    height: 46px;
+    margin-bottom: 36px;
+    background-color: #0977ff;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+i.icon.fa-solid.fa-house:hover {
+    color: #2196f3;
+}
